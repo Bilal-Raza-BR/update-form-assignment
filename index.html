@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <div class="wrapper">
+            <form action="#">
+                <h2>
+                    Wellcome
+                </h2>
+                <div class="input-field">
+                    <input type="text" required name="email" id="email">
+                    <label>
+                        Enter your Email
+                    </label>
+                </div>
+                <div class="input-field">
+                    <input type="password" required name="password" id="password">
+                    <label>
+                        Enter your Password
+                    </label>
+                </div>
+                <div class="forget">
+                    <label for="remember">
+                        <input type="checkbox" id="remember">
+                        <p>Remember me</p>
+                    </label>
+                    <a href="#">Forget Password?</a>
+                </div>
+                <button type="button" onclick="insertValue()">Add Value</button>
+                <br>
+                <button type="button" onclick="shift()">Delete First Value</button>
+                <br>
+                <button type="button" onclick="pop()">Delete Last Value</button>
+                <div class="register">
+                    <p>
+                        Don't have an account?
+                        <a href="#">Register</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+        <div class="result">
+            <h1>
+                RESULT,S OUTPUT
+            </h1>
+            <br>
+            <br>
+            <p id="data">
+
+            </p>
+
+            <table>
+                <tr>
+                    <th>Email</th>
+                    <th>Password</th>
+                </tr>
+                <tr>
+                    <td id="email1"></td>
+                    <td id="password1"></td>
+                </tr>
+                <tr>
+                    <td id="email2"></td>
+                    <td id="password2"></td>
+                </tr>
+                <tr>
+                    <td id="email3"></td>
+                    <td id="password3"></td>
+                </tr>
+                
+                <tr>
+                    <td id="email4"></td>
+                    <td id="password4"></td>
+                </tr>
+                <tr>
+                    <td id="email5"></td>
+                    <td id="password5"></td>
+                </tr>
+            </table>
+
+        </div>
+    </section>
+    <script src="app.js"></script>
+</body>
+
+</html>
